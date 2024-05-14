@@ -30,14 +30,14 @@ const team = [
         photo: 'scott-estrada-developer.jpg'
     },
     {
-        name: 'WaBarbare Ramos',
+        name: 'Barbara Ramos',
         role: 'Graphic Designer',
         photo: 'barbara-ramos-graphic-designer.jpg'
     }
 ]
 
 
-// con ciclo for stampo in console tutti i dati del singolo membro del team con INTERPOLAZIONE
+// con ciclo for itero e stampo in console tutti i dati del singolo membro del team con INTERPOLAZIONE
 for (let i = 0; i < team.length; i++) {
     console.log(`
     Nome: ${team[i].name}, 
@@ -58,7 +58,7 @@ for (let i = 0; i < team.length; i++) {
     const infoTeam = team[i];
     // definisco variabile per creare un h2 in HTML
     const h2 = document.createElement('h2');
-    // appendo su h2 l'oggetto name e role
+    // appendo su h2 l'oggetto name e role INTERPOLAZIONE
     h2.append(`${infoTeam.name} , ${infoTeam.role}`);
     // appendo h2 a li
     li.append(h2);
